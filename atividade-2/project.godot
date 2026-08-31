@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="atividade-01"
-run/main_scene="uid://c5axiobvqqjtr"
+config/name="atividade-2"
+run/main_scene="uid://dqd0g3d1n4vur"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
