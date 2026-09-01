@@ -123,4 +123,7 @@ sprite_frames = SubResource("SpriteFrames_3hdod")
 animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=231616020]
+limit_left = 0
+limit_top = -1843
+limit_bottom = 250
 position_smoothing_enabled = true
