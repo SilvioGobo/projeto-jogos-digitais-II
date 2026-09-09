@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ctuifwyc03g6b" path="res://scripts/player.gd" id="1_merdl"]
 [ext_resource type="Texture2D" uid="uid://dmmauhnr8qe31" path="res://sprites/Sprite Pack 6/1 - Penguin/Idle (16 x 16).png" id="2_b0kkn"]
+[ext_resource type="Texture2D" uid="uid://caijjlcghwlmv" path="res://sprites/Sprite Pack 6/1 - Penguin/Ducking (16 x 16).png" id="2_qly61"]
 [ext_resource type="Texture2D" uid="uid://c2c8iis6o5ept" path="res://sprites/Sprite Pack 6/1 - Penguin/Jump (16 x 16).png" id="3_rfe5m"]
 [ext_resource type="Texture2D" uid="uid://bw04put8nocfm" path="res://sprites/Sprite Pack 6/1 - Penguin/Waddling (16 x 16).png" id="4_qly61"]
 
@@ -59,6 +60,14 @@ region = Rect2(80, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3hdod"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qly61")
+}],
+"loop": 1,
+"name": &"duck",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_e4p34")
@@ -120,7 +129,7 @@ shape = SubResource("CapsuleShape2D_3hdod")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=89211015]
 z_index = 1
 sprite_frames = SubResource("SpriteFrames_3hdod")
-animation = &"idle"
+animation = &"duck"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=231616020]
 limit_left = 0
